@@ -12,6 +12,7 @@ public class Program
         savings.Withdraw(30);
         savings.Withdraw(20);
         savings.GetBalance();
+        savings.ShowTransactionHistory();
 
         Console.WriteLine("-----------------------");
 

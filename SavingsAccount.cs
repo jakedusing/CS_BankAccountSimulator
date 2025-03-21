@@ -18,6 +18,7 @@ class SavingsAccount : BankAccount
     {
         decimal interest = Balance * interestRate;
         Balance += interest;
+        AddTransaction(interest, "Interest");
         Console.WriteLine($"{Owner} earned {interest:C} in interest. New balance: {Balance:C}");
     }
 
